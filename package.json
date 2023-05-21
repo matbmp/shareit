@@ -13,11 +13,14 @@
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.52",
+		"@skeletonlabs/skeleton": "^1.5.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
+		"@tailwindcss/forms": "^0.5.3",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.14",
+		"axios": "^1.4.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.26.0",
@@ -37,7 +40,6 @@
 		"@popperjs/core": "^2.11.7",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"classnames": "^2.3.2",
-		"flowbite": "^1.6.5",
-		"flowbite-svelte": "^0.35.1"
+		"moment": "^2.29.4"
 	}
 }
