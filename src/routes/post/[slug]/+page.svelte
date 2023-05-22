@@ -22,13 +22,13 @@
 </script>
 
 <div class="mx-auto lg:w-1/2 flex flex-col gap-4">
-	<div class="p-4 pb-2 variant-soft-surface">
+	<div class="p-4 pb-2 variant-glass-tertiary">
 		<div class="flex items-center">
-			<div class="rounded-full h-8 w-8 m-2 bg-purple-500" />
+			<div class="rounded-full h-8 w-8 m-2 variant-filled" />
 			<div>
 				<span>{post.author?.username}</span>
 			</div>
-			<div class="ms-auto text-black/75">
+			<div class="chip variant-soft-surface ms-auto">
 				{moment(post.createdDate).fromNow()}
 			</div>
 		</div>
@@ -75,9 +75,9 @@
 		Loading comments...
 	{:then comments}
 		{#each comments as comment}
-			<div class="variant-soft-surface p-4">
+			<div class="variant-glass-tertiary p-4">
 				<div class="flex items-center">
-					<div class="rounded-full h-8 w-8 bg-purple-500" />
+					<div class="rounded-full h-8 w-8 variant-filled" />
 					<div class="mx-2 text-black/50">{comment.author.username}</div>
 					<div class="chip variant-soft-surface">
 						{moment(comment.createdDate).fromNow()}

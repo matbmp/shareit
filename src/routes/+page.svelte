@@ -12,7 +12,7 @@
 		Loading...
 	{:then posts}
 		{#each posts as post}
-			<div class="variant-soft-surface px-4 py-2 m-4 rounded-2xl">
+			<div class="variant-glass-tertiary px-4 py-2 m-4 rounded-2xl">
 				<div class="flex items-center">
 					<div class="rounded-full h-8 w-8 m-2 variant-filled" />
 					<div>
@@ -37,7 +37,7 @@
 							});
 						}}
 					>
-						<ArrowUp class={`h-8 w-8 ${post.isLiked ? 'text-green-500' : ''}`} />
+						<ArrowUp class={`h-8 w-8  ${post.isLiked ? 'text-green-500' : ''}`} />
 					</button>
 					<span class={`text-xl px-2`}>{post.likes}</span>
 					<a href="/post/{post.id}" class="ms-auto flex">

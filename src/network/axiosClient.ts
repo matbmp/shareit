@@ -2,7 +2,8 @@ import axios from 'axios';
 import { session } from '../store';
 import { get } from 'svelte/store';
 
-export const baseServerUrl = `http://localhost:5000`;
+
+export const baseServerUrl = `http://64.226.117.46/`;
 
 export const axiosClient = axios.create({
 	baseURL: baseServerUrl,
