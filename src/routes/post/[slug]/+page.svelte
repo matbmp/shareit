@@ -49,9 +49,6 @@
 				<ArrowUp class={`h-8 w-8 ${post.isLiked ? 'text-green-500' : ''}`} />
 			</button>
 			<span class="text-xl px-2">{post.likes}</span>
-			<div class="ms-auto flex">
-				<Comment class="h-8 w-8" /><span class="text-xl px-2">{post.commentCount}</span>
-			</div>
 		</div>
 	</div>
 	{#if $session !== null}
