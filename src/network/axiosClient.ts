@@ -3,7 +3,7 @@ import { session } from '../store';
 import { get } from 'svelte/store';
 
 
-export const baseServerUrl = `https://64.226.117.46/`;
+export const baseServerUrl = `https://matbmp.mooo.com/`;
 
 export const axiosClient = axios.create({
 	baseURL: baseServerUrl,
