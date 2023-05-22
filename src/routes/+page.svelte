@@ -15,10 +15,8 @@
 			<div class="variant-glass-tertiary px-4 py-2 m-4 rounded-2xl">
 				<div class="flex items-center">
 					<div class="rounded-full h-8 w-8 m-2 variant-filled" />
-					<div>
-						<span>{post.author?.username}</span>
-					</div>
-					<div class="ms-auto text-black/75">
+					<div class="text-ellipsis overflow-hidden w-1/2">{post.author?.username}</div>
+					<div class="ms-auto">
 						{moment(post.createdDate).fromNow()}
 					</div>
 				</div>
@@ -32,8 +30,8 @@
 					<button
 						on:click={() => {
 							PostLike(post.id).then(() => {
-								post.likes += post.isLiked ? -1 : 1
-								post.isLiked = !post.isLiked
+								post.likes += post.isLiked ? -1 : 1;
+								post.isLiked = !post.isLiked;
 							});
 						}}
 					>

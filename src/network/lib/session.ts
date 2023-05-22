@@ -1,5 +1,6 @@
 import { axiosClient } from "../axiosClient"
 import type { UserResponse } from "./user"
+import { session } from "../../store"
 
 interface PostRequest{
     username: string,
@@ -16,5 +17,7 @@ export function PostSession(request: PostRequest){
 }
 
 export function DeleteSession(){
-    return axiosClient.delete('/session')
+    return axiosClient.delete('/session').finally(() => {
+        session.set(null);
+    })
 }

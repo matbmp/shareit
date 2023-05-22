@@ -9,7 +9,7 @@
 </script>
 
 <div class="flex items-center justify-center">
-	<div class="flex flex-col gap-4 w-1/4">
+	<div class="flex flex-col gap-4 lg:w-1/4 w-full p-4">
 		<a href="/" class="self-center">
 			<img alt="" src={'logo.jpg'} class="h-60 w-60 rounded-full my-4" />
 		</a>

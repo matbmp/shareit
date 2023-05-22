@@ -25,9 +25,9 @@
 
 </script>
 
-<div class="flex flex-col items-center justify-center p-2">
+<div class="flex flex-col items-center justify-center p-4">
 	<div
-		class="w-1/3 flex flex-col items-center justify-center bg-gradient-to-b variant-gradient-primary-secondary rounded-2xl"
+		class="w-full lg:w-1/2 xl:w-1/3 flex flex-col items-center justify-center bg-gradient-to-b variant-gradient-primary-secondary rounded-2xl"
 	>
 		<div class="text-3xl mt-8">{$session?.user.username}</div>
 		<div class="text-black/50 pb-8">
@@ -40,10 +40,7 @@
 		<div class="bg-white self-stretch flex flex-col items-center p-4 rounded-b-2xl">
 			<span class="text-xl p-2">{user.email}</span>
 			<button class="btn variant-filled-tertiary self-stretch my-4" on:click={() => {
-				DeleteSession().finally(() => {
-					$session = null;
-					goto('/');
-				})
+				DeleteSession().finally(() => goto('/'))
 			}}>
 			Log out
 		</button>

@@ -60,6 +60,7 @@
 				on:click={() => {
 					if (commentContent?.length > 0) {
 						PostComment(data.post.id, { content: commentContent }).then(() => {
+							commentContent = '';
 							commentPromise = GetComment(data.post.id, 0, 10);
 						});
 					}
@@ -75,7 +76,7 @@
 			<div class="variant-glass-tertiary p-4">
 				<div class="flex items-center">
 					<div class="rounded-full h-8 w-8 variant-filled" />
-					<div class="mx-2 text-black/50">{comment.author.username}</div>
+					<div class="mx-2">{comment.author.username}</div>
 					<div class="chip variant-soft-surface">
 						{moment(comment.createdDate).fromNow()}
 					</div>
