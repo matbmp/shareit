@@ -71,10 +71,10 @@
 				
 
 				{#if $session === null}
-					<a href="/login" class="btn variant-filled">Login</a>
+					<a href="/login" class="btn variant-filled-primary">Login</a>
 				{:else}
 					<div class="hidden lg:flex gap-4">
-						<button class="btn variant-filled" use:popup={popupClick}>
+						<button class="btn variant-filled-primary" use:popup={popupClick}>
 							<span>{$session.user?.username}</span>
 						</button>
 						<div class="card p-4 variant-glass-secondary" data-popup="popupClick">

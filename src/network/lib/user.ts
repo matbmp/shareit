@@ -15,7 +15,7 @@ export interface UserResponse{
     id: number,
     username: string,
     email: string,
-    createdDate: Date,
+    createdDate?: Date,
     imageUrl: string
 }
 
