@@ -105,7 +105,7 @@
 							});
 						}}
 					>
-						<ArrowUp class={`h-8 w-8 ${post.isLiked ? 'text-green-500' : ''}`} />
+						<ArrowUp class={`h-8 w-8 ${comment.isLiked ? 'text-green-500' : ''}`} />
 					</button>
 					<span class="text-xl px-2">{comment.likes}</span>
 				</div>
