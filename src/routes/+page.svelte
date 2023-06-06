@@ -12,7 +12,7 @@
 		Loading...
 	{:then posts}
 		{#each posts as post}
-			<div class="variant-glass-tertiary px-4 py-2 m-4 rounded-2xl">
+			<div class="variant-outline-surface shadow-lg px-4 py-2 m-4 rounded-2xl">
 				<div class="flex items-center">
 					<div class="rounded-full h-8 w-8 m-2 variant-filled" />
 					<div class="text-ellipsis overflow-hidden w-1/2">{post.author?.username}</div>

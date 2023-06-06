@@ -22,7 +22,7 @@
 </script>
 
 <div class="mx-auto lg:w-1/2 flex flex-col gap-4">
-	<div class="p-4 pb-2 variant-glass-tertiary">
+	<div class="p-4 pb-2 variant-outline-surface shadow-lg">
 		<div class="flex items-center">
 			<div class="rounded-full h-8 w-8 m-2 variant-filled" />
 			<div>
@@ -73,7 +73,7 @@
 		Loading comments...
 	{:then comments}
 		{#each comments as comment}
-			<div class="variant-glass-tertiary p-4">
+			<div class="variant-outline-surface shadow-lg p-4">
 				<div class="flex items-center">
 					<div class="rounded-full h-8 w-8 variant-filled" />
 					<div class="mx-2">{comment.author.username}</div>

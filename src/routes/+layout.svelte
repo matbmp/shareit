@@ -1,6 +1,7 @@
 <script lang="ts">
 	// Your selected Skeleton theme:
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+	import '../theme.css'
+	//import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 
 	// This contains the bulk of Skeletons required styles:
 	// NOTE: this will be renamed skeleton.css in the v2.x release.
@@ -46,8 +47,10 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<AppBar
+			background="variant-filled-secondary"
+
 			gridColumns="grid-cols-3"
-			shadow="shadow-xl"
+			shadow="shadow-lg"
 			slotDefault="place-self-center"
 			slotTrail="place-content-end"
 		>
@@ -65,9 +68,7 @@
 				</div>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div>
-					<LightSwitch />
-				</div>
+				
 
 				{#if $session === null}
 					<a href="/login" class="btn variant-filled">Login</a>
